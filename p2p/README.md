@@ -41,7 +41,9 @@ Now you will:
 
 ## Step 3:
 
-${EXPLICATION ABI (`forge inspect Counte abi`) + JSON-RPC}
+In this step you're going to deploy your contract. To explain a bit what is behind, a solidity smart contract is not only code, a bit like in a software there are a few parts that underlie it. The first one is the ABI (Application Binary Interface) which is a JSON file that contains the signature of your functions and variables. You can view it using `forge inspect Counter abi`. It helps anyone understand how to interact with your smart contract without having the code. The second one is the bytecode which is the compiled version of your code a bit like machine language. It is the code that will be executed on the blockchain.
+
+When you want to interact with a blockchain you are going to use what is called a JSON-RPC. It is a protocol of data interaction that was first created by Google and uses json for the data format. All the ethereum clients use this type of protocol to interact with other peers.
 
 Now create a `Contract.sol` file and add the following contract to it.
 ```Solidity
@@ -68,7 +70,7 @@ When you think it's done you can try it by calling the `guess()` function with y
 
 ## Step 4:
 
-For this step we will interract with a testnets.
+For this step we will interract with a testnets. A testnet is a blockchain that is used to test smart contracts and dapps. It is close to the mainnet but with the main difference being that it is not used to store real value.
 
 So you will need to create a wallet.
 > add doc
